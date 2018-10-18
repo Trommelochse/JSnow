@@ -1,0 +1,10 @@
+{
+  "name": "snow",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Clemens A. Janes",
+  "scripts": {
+    "build": "parcel index.js -d build"
+  }
+}
