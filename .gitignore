@@ -1,5 +1,6 @@
 dist
 .cache
+example
 build
 index.html
 style.css

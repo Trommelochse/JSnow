@@ -5,6 +5,6 @@
   "license": "MIT",
   "author": "Clemens A. Janes",
   "scripts": {
-    "build": "parcel index.js -d build"
+    "build": "parcel build index.js -d build"
   }
 }

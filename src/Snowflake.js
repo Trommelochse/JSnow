@@ -3,7 +3,7 @@ export default class Snowflake {
         this.sky = sky;
 
         this.size = randFloat(7,30,2);
-        this.speed = calculateSpeed(this.size);
+        this.speed = calculateSpeed(this.size) * Math.pow(this.sky.settings.snowSpeed, -1);
         this.rotationSpeed = randFloat(-0.6, 0.6, 1);
         this.blur = calculateBlur(this.size);
         this.opacity = randFloat(0.13,0.3,3);
@@ -16,7 +16,7 @@ export default class Snowflake {
     }
 
     move() {
-        if (this.y + this.size > this.sky.height) {
+        if (this.y + this.size * 1.35 > this.sky.height) {
             this.die();
             this.sky.snowflakes = this.sky.snowflakes.filter(flake => flake.alive);
             return;
